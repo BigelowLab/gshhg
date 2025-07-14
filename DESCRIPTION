@@ -1,0 +1,18 @@
+Package: gshhg
+Type: Package
+Title: Managing GSHHG datasets with R 
+Version: 0.1.0
+Author: Ben Tupper
+Maintainer: Ben Tupper <btupper@bigelow.org>
+Description: Provides download, archiving and access to GSHHG related local datasets.
+URL: https://github.com/BigelowLab/gshhg
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports:
+  rlang,
+  archive,
+  dplyr,
+  sf
+RoxygenNote: 7.3.2
