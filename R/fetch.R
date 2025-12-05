@@ -21,3 +21,13 @@ fetch_version = function(url = 'https://www.ngdc.noaa.gov/mgg/shorelines/data/gs
   if (cleanup)  unlink(tmpfile)
   ok
 }
+
+#' @rdname fetch_version
+#' @export
+fetch_gshhg = function(url = 'https://www.ngdc.noaa.gov/mgg/shorelines/data/gshhg/latest/gshhg-shp-2.3.7.zip',
+                       path = gshhg_path(),
+                       cleanup = TRUE){
+  fetch_version(url = url,
+                path = path,
+                cleanup = cleanup)
+}

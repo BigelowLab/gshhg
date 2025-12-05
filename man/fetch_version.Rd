@@ -2,9 +2,16 @@
 % Please edit documentation in R/fetch.R
 \name{fetch_version}
 \alias{fetch_version}
+\alias{fetch_gshhg}
 \title{Fetch a version and store in the root data path}
 \usage{
 fetch_version(
+  url = "https://www.ngdc.noaa.gov/mgg/shorelines/data/gshhg/latest/gshhg-shp-2.3.7.zip",
+  path = gshhg_path(),
+  cleanup = TRUE
+)
+
+fetch_gshhg(
   url = "https://www.ngdc.noaa.gov/mgg/shorelines/data/gshhg/latest/gshhg-shp-2.3.7.zip",
   path = gshhg_path(),
   cleanup = TRUE
